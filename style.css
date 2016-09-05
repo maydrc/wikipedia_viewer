@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.webpage-background {
+  background: url("images/Wikipedia.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+/* Search Bar Starts Here */
+/* Search Bar Ends Here */
+
+/* Media queries Stars Here */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+/* Media queries Ends Here */
