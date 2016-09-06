@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Lato" type='text/css'>
   <link rel="stylesheet" href="style.css" />
   <!-- CSS Ends Here! -->
@@ -17,12 +16,29 @@
 
   <!-- Search Bar Starts Here! -->
   <div class="container-fluid">
+    <div class="row button-positioning">
+      <div class="center-block text-center">
+        <div class="button-wrapping">
+          <span>Search Article</span>
+          <input id="search-input" type="text" name="search" placeholder="What are you looking for?" class="input-left"></input>
+          <button id="search-button" type="button" class="btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="button-wrapping">
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn"><i class="fa fa-wikipedia-w"></i></a>
+          <span>Random Article</span>
+        </div>
+      </div>
+    </div>
+    <div class="row noReturn-formating hidden">
+      <div class="center-block text-center">
+        <h2>The Search Criteria You Entered Didn't Return Results</h2>
+      </div>
+    </div>
   </div>
   <!-- Search Bar Ends Here! -->
 
   <!-- JS Starts Here! -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script src="script.js"></script>
   <!-- JS Ends Here! -->
 </body>

@@ -1,11 +1,67 @@
 body, html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  clear: both;
 }
 .webpage-background {
   background: url("images/Wikipedia.jpg");
   background-size: cover;
   background-position: bottom;
+}
+.button-wrapping {
+ display: inline-block;
+ position: relative;
+}
+.button-wrapping span,
+.noReturn-formating h2  {
+  color: #F6F7F6;
+  margin-right: 5px;
+  text-shadow: 1px 2px 3px #444;
+  font-family: Raleway;
+}
+.button-wrapping button,
+.button-wrapping a {
+  background-color: #F6F7F6;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  padding: 0;
+}
+.button-wrapping a {
+  padding-top: 3px;
+  color: #000;
+}
+.button-wrapping i {
+  vertical-align: middle;
+  line-height: 33px;
+}
+.button-positioning {
+  margin-top: 25%;
+  transition: margin-top 1s;
+}
+.button-positioning.up {
+  margin-top: 5%;
+}
+.input-left {
+  position: absolute;
+  right: 36px;
+  background-color: #F6F7F6;
+  height: 35px;
+  width: 0;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.5s;
+}
+.input-left.open {
+  width: 230px;
+  padding-left: 10px;
+}
+.noReturn-formating {
+  margin-top: 50px;
 }
 /* Search Bar Starts Here */
 /* Search Bar Ends Here */
