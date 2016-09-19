@@ -4,7 +4,7 @@ function callApi(search) {
   $('#wiki-results').empty();
   $('.button-positioning').addClass('up');
   $('.noReturn-formating').addClass('hidden');
-  $.getJSON('https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages%7Cinfo&generator=search&exsentences=1&exlimit=20&exintro=1&explaintext=1&piprop=original&pilimit=50&inprop=url&gsrsearch=' + search + '&callback=?', function(data) {
+  $.getJSON('https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages%7Cinfo&generator=search&exsentences=1&exlimit=20&exintro=1&explaintext=1&piprop=original&pilimit=50&inprop=url&gsrsearch=' + encodeURIComponent(search) + '&callback=?', function(data) {
     console.log(data);
     if (data.query && data.query.pages) {
       $('.overlayOff').addClass('overlayOn');
@@ -40,6 +40,7 @@ function callApi(search) {
   });
 }
 function clear() {
+  $('#search-button').focus();
   $('#search-input').removeClass('open');
   $('#wiki-results').empty();
   $('.overlayOff').removeClass('overlayOn');
@@ -64,7 +65,6 @@ $(document).ready(function() {
     }
     if (event.keyCode === 13 && search === '') {
       clear();
-      $('#search-button').focus();
     }
   });
   $('#search-input').focusout(function() {
