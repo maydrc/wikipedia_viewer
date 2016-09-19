@@ -129,7 +129,7 @@ span.overflow {
 }
 .input-left {
   position: absolute;
-  right: 36px;
+  right: 20px;
   background-color: #F6F7F6;
   height: 35px;
   top: 0;
@@ -141,7 +141,8 @@ span.overflow {
   -webkit-appearance: none;
 }
 .input-left.open {
-  width: 110px;
+  width: 120px;
+  padding-right: 20px;
   padding-left: 10px;
 }
 .noReturn-formating {
